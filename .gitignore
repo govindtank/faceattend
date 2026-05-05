@@ -1,0 +1,36 @@
+# ──────────────────────────────────────────────
+# Platform / IDE artifacts
+# ──────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ──────────────────────────────────────────────
+# Flutter build artifacts (each sub-project)
+# ──────────────────────────────────────────────
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/build/
+**/.fvm/
+
+# ──────────────────────────────────────────────
+# Nested .git directories (converted from submodules)
+# ──────────────────────────────────────────────mobile_app/.git/
+admin_panel/.git/
+backend/.git/
+
+# ──────────────────────────────────────────────
+# Node.js (backend)
+# ──────────────────────────────────────────────
+backend/node_modules/
+backend/.env
+backend/npm-debug.log*
+
+# ──────────────────────────────────────────────
+# OS artifacts
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db

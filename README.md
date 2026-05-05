@@ -1,7 +1,31 @@
 # FaceAttend - Offline Face Recognition Attendance System
 
+## Project Structure
+```
+faceattend/
+├── mobile_app/       # Flutter mobile app (employee check-in/out)
+│   ├── lib/
+│   │   ├── models/          # Employee, AttendanceRecord models
+│   │   ├── services/        # FaceRecognitionService, DatabaseHelper
+│   │   ├── widgets/         # CameraPreviewWidget
+│   │   └── main.dart
+│   └── pubspec.yaml
+├── admin_panel/      # Flutter admin dashboard (web/mobile)
+│   ├── lib/
+│   │   ├── models/          # Employee model
+│   │   ├── screens/        # Login, Dashboard, Reports, Settings
+│   │   ├── services/       # AuthService, EmployeeService, AttendanceService
+│   │   └── main.dart
+│   └── pubspec.yaml
+├── backend/          # Node.js/Express + MongoDB backend
+│   ├── server.js            # API routes, auth, models
+│   ├── package.json
+│   └── .env.example
+└── ARCHITECTURE.md   # Detailed architecture docs
+```
+
 ## Project Overview
-FaceAttend is an offline-first face recognition attendance system designed for companies to track employee attendance. The system consists of a mobile app (Flutter) for employees to check-in/check-out using face recognition, an admin panel (Flutter web) for managing employees and viewing attendance reports, and a backend (Node.js/Express) for data synchronization and storage.
+FaceAttend is an offline-first face recognition attendance system designed for companies to track employee attendance. The system consists of a mobile app (Flutter) for employees to check-in/check-out using face recognition, an admin panel (Flutter) for managing employees and viewing attendance reports, and a backend (Node.js/Express) for data synchronization and storage.
 
 ## Key Features
 
