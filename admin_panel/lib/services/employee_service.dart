@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'dart:convert';
-import 'package:http/http.dart' as http';
+import 'package:http/http.dart' as http;
 import '../models/employee_model.dart';
 
 class EmployeeService extends ChangeNotifier {

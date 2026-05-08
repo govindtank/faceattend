@@ -5,7 +5,7 @@ class Employee {
   final String position;
   final String email;
   final String phone;
-  final List<double>? faceTemplate; // Face embedding for recognition
+  List<double>? faceTemplate; // Face embedding for recognition
   final DateTime createdAt;
   bool isActive;
 

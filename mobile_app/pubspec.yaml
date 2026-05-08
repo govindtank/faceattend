@@ -1,4 +1,4 @@
-name: mobile_app
+name: faceattend
 description: "FaceAttend — Face recognition-based employee attendance mobile app."
 publish_to: 'none'
 
